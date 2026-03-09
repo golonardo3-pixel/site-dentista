@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branqueamento Dental | Diego Rosa Odontologia | dentist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #004AAD;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+        
+        body { font-family: var(--font-sans); }
+        .serif { font-family: var(--font-serif); }
+        
+        .bg-primary { background-color: var(--primary); }
+        .text-primary { color: var(--primary); }
+        .border-primary { border-color: var(--primary); }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="serif text-2xl font-black tracking-tighter">Branqueamento Dental | Diego Rosa Odontologia</div>
+        <div class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest opacity-70">
+            <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
+            <a href="#servicos" class="hover:text-primary transition-colors">Serviços</a>
+            <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+        </div>
+        <a href="https://wa.me/5519998849875" target="_blank" class="px-6 py-3 btn-primary rounded-full text-[10px] font-black uppercase tracking-widest">Agendar</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-slate-50">
+        <div class="absolute inset-0 z-0">
+            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfXhlMlBE16F5UpFyBsOl2imrwVeuF0EZUkUrYK1UGuTdUH6psX7q7LQqoOBS9UNRyJ2l7JotvPRIC1fYo6Io5FnsN-Ahmq2Rn_c6JyiAi8ntR9szbytJWbsWsgLfFPR_77e934LBjbmabZ7BzXYUh_ZYl6h1Yoc0WZwjDkjdpjEbC5r-RA3seEGuK98QIFeVdQfyXKa-WtuRL-x7f36RK2CvvXInSuo3Y02Rq8cdm6-KJSja9j4DuIzuhFsqZrjdJO_-Jdvp8Xtu7D7Hn60Bb1daPi6N3HbAmmyF-5IqLtzvw&maxHeightPx=1200&maxWidthPx=1920&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover opacity-50" alt="Branqueamento Dental | Diego Rosa Odontologia" referrerpolicy="no-referrer">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-current opacity-20"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center space-y-8 animate-fadeIn">
+            <div class="space-y-4">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-60 block">Bem-vindo ao Branqueamento Dental | Diego Rosa Odontologia</span>
+                <h1 class="serif text-6xl md:text-9xl font-black leading-tight tracking-tighter">
+                    dentist <br>
+                    <span class="italic font-normal opacity-80">em Campinas.</span>
+                </h1>
+            </div>
+            
+            <p class="text-lg md:text-xl opacity-70 font-light max-w-2xl mx-auto leading-relaxed">
+                Elevando o padrão de dentist em Campinas. Uma experiência desenhada para quem busca o extraordinário e resultados reais.
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 pt-6">
+                <a href="https://wa.me/5519998849875" target="_blank" class="w-full md:w-auto px-10 py-5 btn-primary rounded-full font-black text-xs uppercase tracking-widest shadow-xl">
+                    Falar no WhatsApp
+                </a>
+                <a href="#sobre" class="w-full md:w-auto px-10 py-5 border border-current/20 rounded-full font-black text-xs uppercase tracking-widest hover:bg-current/5 transition-all">
+                    Conhecer Unidade
+                </a>
+            </div>
+
+            <!-- Google Rating Badge -->
+            <div class="pt-12 flex flex-col items-center gap-2 opacity-80">
+                <div class="flex items-center gap-1 text-amber-400">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="text-sm font-bold uppercase tracking-widest">
+                    ⭐ 5 no Google • 22 avaliações
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Nossa Essência</span>
+                    <h2 class="serif text-5xl md:text-7xl font-black tracking-tighter leading-tight">Excelência & <br><span class="italic font-normal opacity-60">Compromisso.</span></h2>
+                </div>
+                
+                <p class="text-lg opacity-70 font-light leading-relaxed">
+                    Localizados em Campinas, o Branqueamento Dental | Diego Rosa Odontologia é referência em dentist. 
+                    Nossa missão é transformar cada atendimento em uma experiência única de satisfação e confiança.
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 pt-8 border-t border-current/10">
+                    <div class="space-y-1">
+                        <div class="serif text-4xl font-black">5</div>
+                        <div class="text-[10px] font-black uppercase tracking-widest opacity-50">Nota Média</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="serif text-4xl font-black">+22</div>
+                        <div class="text-[10px] font-black uppercase tracking-widest opacity-50">Avaliações</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWyBMTB8v5bopPn_9dEUUXf-87oTyQGDdOvE5TpH9wwRcsxG1cUtJUejBvFlOlrQjiYZuXWWB8Xwyisk1vJbtz15Hj6mKfWMpZ__iLvkJDlN5lCcU5S9N-UVAcQcvQLguDVCsqQ3oc-l5Fl4qi_zDdKnMurA9h5KThANm3bn7lLI-HRjK8vPQ-OzkwgYkL7SCkV3hwg0iVLMXkLhkvYw9Ng2QOqyTIlb_2UIgf7qV-lA2h4qKDGxLRhPpAskr4rPC35vvmP54Y1kkZg9_tWH9CmtA1F443qHSj1ZLdL28cskg&maxHeightPx=800&maxWidthPx=1200&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="rounded-[2rem] shadow-2xl w-full h-[500px] object-cover" alt="Ambiente" referrerpolicy="no-referrer">
+                <div class="absolute -bottom-10 -left-10 bg-primary text-white p-10 rounded-[2rem] hidden md:block shadow-2xl">
+                    <div class="serif text-3xl font-black mb-2">Qualidade</div>
+                    <div class="text-[10px] font-black uppercase tracking-widest opacity-70">Garantida em cada detalhe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-32 px-6 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Nosso Espaço</span>
+                <h2 class="serif text-5xl md:text-7xl font-black tracking-tighter">Galeria de <span class="italic font-normal opacity-60">Fotos.</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVRGAdg8FJoq3HXJ8X4YAMipe2HqKLbaOhlsGS78Vx4HB60tNKZnRoYsMsA5pRIoXukKBedwsE6nxcOjHMd5wPtoRRDo8ZU8s_YT2u79nC0_Ib12SlZWg9Nu-TokQoWzAXuP1eOPc4QDyGrVfJhyuyss6DJbYNW7gqbiaJXmJjD3XthnKqAi_j8-oWVrs9yzWdQdx-Fa8pw-ufvsVxq7raADq8NnLsWZbl1srgFgafAQP8_VTxZIBa9oEuYiva40OmKBX0QplAzsHn4haKPSSnUb2CDvG2mEBFjiODkOlRm4w&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 1" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWT8TcNNJVyBr7POdzKjtgan-CFN7cETHB_9MevAy5StuFdnAQFu0XGsBVbUjb0RvUvJU5mDS4MS9FPvCfa95PfxLHvfeY6d1UzWrMApFYyRQZ7St0sXGmNTIlOM5MdfFmDap6trahhg8nkKgOthKmil2VxdyzUWXT1U6brrt3slkVm2CpcbQv8rLr9d67IzQ3-K32VZ1V3sOIM7IviOcyxc4xuT6SXbVf-PAN2TXLhFVmyD2WfiB6GmwNkWL_zXPxoU8pWkPGBmbKk60U2abMU4Lg27YpHltC1WXrU9jC4Nw&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 2" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfURVaMs4Iu7pcl3fnyGoS3Tmps4fD6wR6BmuOdlQCCZ-6bbDPp1YPLvpCilmO_vV2IzLD9wAWUyblsNFEk25GAtzhY6aQeT9JRGG2JG6m4TjwjxJc820WH7nSP9t1YUjJ82lfp6X_ckfz2QA2NU13hAynN9SS-EnB7MRVhcj7Tlk8ktWDv8zLKy_2NP3s49r79mJAIbNeyx9BgxFLs8WbbUZNLBrdbTPzs2E8FC8MUQ3U150Hw_EQgItHmD7PabJiUcAFN3Our87RnhMqc-r4IpIwuGlDBM6sXnZsnG0x0dtw&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 3" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfU46VR85c471oforoGMgrluAdXQZupq8B-lZJqFWK3OlZJnnykhTx9z-oZEvgJGWy_1SL9tDaFlcs7pw3jncu-wQtKIeFAbWvmvzXS6dwObAiCm7aac7FwdDWZq-9oKITZWj4yADwIVeOWw5av6EkPTarCHh6svzh1KwwrXFZwmqjEVNGlB5aqXMr-O5GrY_q0Ob2ufj8xmlc4JZ26O3QKN_apzh_JZ3pkczcnKk2cRo1Z-T-ygAGPecq7D0HFAvf3jBcayid2-Z8KvUOu3fpIQKHLS63CxX8qif5yaPJipBQ&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 4" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVmuxRSywS39FdUUWl1uahFsuZ46leqhQ3-3lzh_hSl4yBCSjY97HPbPrGqmP3iBI9GGgaQym7qzwkNHPql2JpotO_qme1BiDVaDJu9UOWWnX6qdTKpHdvStbguUKn0-NHzKZC8kMT-ITXU0gBG8JVD66O5DPVHFO9cduwjyKRCHgXZdbBPTLZgjQykIlJ5aLvBU6SUqDfzBKmZXaTgdewVqx9CKKL5qcdNx8mQNF_D-xlmI-UzCNOHJAyoNt2UVUm4cmd0qjEPvh1tdXUhyGOrH2RosqiTs6hdZschBiLocg&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 5" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-square shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVAaGCchMtvubEi12m4NAYgrM--FSVQcZqMswSSlNtUf67q76E8eCDRP_JpyxNlHh_WqE4i89ohnWEfSO41dRmHPI45qhKYS3nKzbmLBmzNH_ld7IhWX20IxJdN_u3aE04zIvms6vXMLAVgZWSUkCen_eT_IJPuFFVhkASVx28yRDTysE0Tpg9kOF_X64ORPEwZ728hpLlkTBowGKQOeYaibsnG79kmfJrPSF8gccJeIyvmbDCUkgu68LgxzkCsZbXuo0B3KPqCJCEosNR8thG9QPHkuIcBAXOeH-H_SwiOSg&maxHeightPx=800&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 6" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-[10px] font-black uppercase tracking-widest border border-white/40 px-6 py-3 rounded-full">Ver Detalhes</div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="servicos" class="py-32 bg-current/5 rounded-[3rem] mx-4 md:mx-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="space-y-4 mb-20">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Especialidades</span>
+                <h2 class="serif text-5xl md:text-7xl font-black tracking-tighter">Nossos <span class="italic font-normal opacity-60">Serviços.</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                    <div class="p-10 bg-white shadow-sm rounded-[2rem] hover:shadow-xl transition-all group text-left border border-slate-100 overflow-hidden relative">
+                        <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity">
+                            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfU9vHFo6fJihT-oAAW_YvcjOGW0GUR0sHE0y09z6i-ijWCHi2xZvcXlmMt-iYNt-dI6vMMYnSdR7vmJK6qq74ialtDgABMezmK6S6WCuFAcYthhsM6B1pUEnxwkdgB1Y_Yo_hbwYlyP4ZPDZrc408V3DxmKCZ17VD1m_0whyJZUzhpd-Hq5JzBqWhw04hC3pvXavQYThXR1Nnk0YsBQgWf0zClOjggsaWlRYFgOWClkDrL_eeSvKRn0vDoFrFW2kyYurcaxowBMlo5KbwvtiwewVnVGu0alCWgDZZ6nnJGH-QPxgaYZpKdV_gETFcgrX7PlOW2s13QnyME6kfdlJaexm7x1_ExBy7FfgZX5T_7822msfJwyXaaYKgkN9sE2R6Fdt3BZS9LmcMvws65Ka_sRregV-VcsZZqN5D9upPCnSEqcLb4lo_MVaVnWYHwS&maxHeightPx=600&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Limpeza & Prevenção" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="serif text-2xl font-black mb-4 text-slate-900">Limpeza & Prevenção</h3>
+                            <p class="text-sm font-light text-slate-500 leading-relaxed">
+                                Serviço especializado de dentist focado em resultados excepcionais para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="p-10 bg-white shadow-sm rounded-[2rem] hover:shadow-xl transition-all group text-left border border-slate-100 overflow-hidden relative">
+                        <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity">
+                            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfXMrqLMRgcxQ6i16Q7Swn0PXt0Gx7u8HCUPtXynzmdIjYwayRmmwxCIMSQUoBaj342ixayIu0A6nBpt4xduvhBmkB2dBeHuQMuR7D1BnBJXvaSQPTwY7KvocpJb8_Nc9pa_W48TtJcmhbWVWAJ1c8cpYlYX5M1_U5LQXvlgm9Cv3A8eXss0G5iedbeuzD1Zh7m_tE6QG0EXAbIdnI8wxA_51VIVPfX8rQvuWQNeXw0-glZ_y911RtdK6cXxYWzNdoi1pXFNwPQXduPxX_ATK6AwN9khJ3xUEsTSjapXF9Usxg&maxHeightPx=600&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Clareamento Dental" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="serif text-2xl font-black mb-4 text-slate-900">Clareamento Dental</h3>
+                            <p class="text-sm font-light text-slate-500 leading-relaxed">
+                                Serviço especializado de dentist focado em resultados excepcionais para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="p-10 bg-white shadow-sm rounded-[2rem] hover:shadow-xl transition-all group text-left border border-slate-100 overflow-hidden relative">
+                        <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity">
+                            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWyBMTB8v5bopPn_9dEUUXf-87oTyQGDdOvE5TpH9wwRcsxG1cUtJUejBvFlOlrQjiYZuXWWB8Xwyisk1vJbtz15Hj6mKfWMpZ__iLvkJDlN5lCcU5S9N-UVAcQcvQLguDVCsqQ3oc-l5Fl4qi_zDdKnMurA9h5KThANm3bn7lLI-HRjK8vPQ-OzkwgYkL7SCkV3hwg0iVLMXkLhkvYw9Ng2QOqyTIlb_2UIgf7qV-lA2h4qKDGxLRhPpAskr4rPC35vvmP54Y1kkZg9_tWH9CmtA1F443qHSj1ZLdL28cskg&maxHeightPx=600&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Implantes Dentários" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="serif text-2xl font-black mb-4 text-slate-900">Implantes Dentários</h3>
+                            <p class="text-sm font-light text-slate-500 leading-relaxed">
+                                Serviço especializado de dentist focado em resultados excepcionais para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="p-10 bg-white shadow-sm rounded-[2rem] hover:shadow-xl transition-all group text-left border border-slate-100 overflow-hidden relative">
+                        <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity">
+                            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVRGAdg8FJoq3HXJ8X4YAMipe2HqKLbaOhlsGS78Vx4HB60tNKZnRoYsMsA5pRIoXukKBedwsE6nxcOjHMd5wPtoRRDo8ZU8s_YT2u79nC0_Ib12SlZWg9Nu-TokQoWzAXuP1eOPc4QDyGrVfJhyuyss6DJbYNW7gqbiaJXmJjD3XthnKqAi_j8-oWVrs9yzWdQdx-Fa8pw-ufvsVxq7raADq8NnLsWZbl1srgFgafAQP8_VTxZIBa9oEuYiva40OmKBX0QplAzsHn4haKPSSnUb2CDvG2mEBFjiODkOlRm4w&maxHeightPx=600&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Ortodontia" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="serif text-2xl font-black mb-4 text-slate-900">Ortodontia</h3>
+                            <p class="text-sm font-light text-slate-500 leading-relaxed">
+                                Serviço especializado de dentist focado em resultados excepcionais para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="p-10 bg-white shadow-sm rounded-[2rem] hover:shadow-xl transition-all group text-left border border-slate-100 overflow-hidden relative">
+                        <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity">
+                            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWT8TcNNJVyBr7POdzKjtgan-CFN7cETHB_9MevAy5StuFdnAQFu0XGsBVbUjb0RvUvJU5mDS4MS9FPvCfa95PfxLHvfeY6d1UzWrMApFYyRQZ7St0sXGmNTIlOM5MdfFmDap6trahhg8nkKgOthKmil2VxdyzUWXT1U6brrt3slkVm2CpcbQv8rLr9d67IzQ3-K32VZ1V3sOIM7IviOcyxc4xuT6SXbVf-PAN2TXLhFVmyD2WfiB6GmwNkWL_zXPxoU8pWkPGBmbKk60U2abMU4Lg27YpHltC1WXrU9jC4Nw&maxHeightPx=600&maxWidthPx=800&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Odontopediatria" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="serif text-2xl font-black mb-4 text-slate-900">Odontopediatria</h3>
+                            <p class="text-sm font-light text-slate-500 leading-relaxed">
+                                Serviço especializado de dentist focado em resultados excepcionais para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-20">
+            <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Nossos Especialistas</span>
+            <h2 class="serif text-5xl md:text-7xl font-black tracking-tighter">Nossa <span class="italic font-normal opacity-60">Equipe.</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            
+                <div class="space-y-6 group">
+                    <div class="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfU46VR85c471oforoGMgrluAdXQZupq8B-lZJqFWK3OlZJnnykhTx9z-oZEvgJGWy_1SL9tDaFlcs7pw3jncu-wQtKIeFAbWvmvzXS6dwObAiCm7aac7FwdDWZq-9oKITZWj4yADwIVeOWw5av6EkPTarCHh6svzh1KwwrXFZwmqjEVNGlB5aqXMr-O5GrY_q0Ob2ufj8xmlc4JZ26O3QKN_apzh_JZ3pkczcnKk2cRo1Z-T-ygAGPecq7D0HFAvf3jBcayid2-Z8KvUOu3fpIQKHLS63CxX8qif5yaPJipBQ&maxHeightPx=800&maxWidthPx=600&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Membro da Equipe 1" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="serif text-2xl font-black">Especialista 1</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest opacity-50">Profissional Sênior</p>
+                    </div>
+                </div>
+            
+                <div class="space-y-6 group">
+                    <div class="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVmuxRSywS39FdUUWl1uahFsuZ46leqhQ3-3lzh_hSl4yBCSjY97HPbPrGqmP3iBI9GGgaQym7qzwkNHPql2JpotO_qme1BiDVaDJu9UOWWnX6qdTKpHdvStbguUKn0-NHzKZC8kMT-ITXU0gBG8JVD66O5DPVHFO9cduwjyKRCHgXZdbBPTLZgjQykIlJ5aLvBU6SUqDfzBKmZXaTgdewVqx9CKKL5qcdNx8mQNF_D-xlmI-UzCNOHJAyoNt2UVUm4cmd0qjEPvh1tdXUhyGOrH2RosqiTs6hdZschBiLocg&maxHeightPx=800&maxWidthPx=600&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Membro da Equipe 2" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="serif text-2xl font-black">Especialista 2</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest opacity-50">Profissional Sênior</p>
+                    </div>
+                </div>
+            
+                <div class="space-y-6 group">
+                    <div class="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVAaGCchMtvubEi12m4NAYgrM--FSVQcZqMswSSlNtUf67q76E8eCDRP_JpyxNlHh_WqE4i89ohnWEfSO41dRmHPI45qhKYS3nKzbmLBmzNH_ld7IhWX20IxJdN_u3aE04zIvms6vXMLAVgZWSUkCen_eT_IJPuFFVhkASVx28yRDTysE0Tpg9kOF_X64ORPEwZ728hpLlkTBowGKQOeYaibsnG79kmfJrPSF8gccJeIyvmbDCUkgu68LgxzkCsZbXuo0B3KPqCJCEosNR8thG9QPHkuIcBAXOeH-H_SwiOSg&maxHeightPx=800&maxWidthPx=600&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Membro da Equipe 3" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="serif text-2xl font-black">Especialista 3</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest opacity-50">Profissional Sênior</p>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-32 px-6 bg-primary/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-20">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Depoimentos</span>
+                <h2 class="serif text-5xl md:text-7xl font-black tracking-tighter">O que dizem <span class="italic font-normal opacity-60">nossos clientes.</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl flex flex-col md:flex-row gap-8 items-center border border-slate-100">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfU9vHFo6fJihT-oAAW_YvcjOGW0GUR0sHE0y09z6i-ijWCHi2xZvcXlmMt-iYNt-dI6vMMYnSdR7vmJK6qq74ialtDgABMezmK6S6WCuFAcYthhsM6B1pUEnxwkdgB1Y_Yo_hbwYlyP4ZPDZrc408V3DxmKCZ17VD1m_0whyJZUzhpd-Hq5JzBqWhw04hC3pvXavQYThXR1Nnk0YsBQgWf0zClOjggsaWlRYFgOWClkDrL_eeSvKRn0vDoFrFW2kyYurcaxowBMlo5KbwvtiwewVnVGu0alCWgDZZ6nnJGH-QPxgaYZpKdV_gETFcgrX7PlOW2s13QnyME6kfdlJaexm7x1_ExBy7FfgZX5T_7822msfJwyXaaYKgkN9sE2R6Fdt3BZS9LmcMvws65Ka_sRregV-VcsZZqN5D9upPCnSEqcLb4lo_MVaVnWYHwS&maxHeightPx=400&maxWidthPx=400&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-24 h-24 rounded-full object-cover shadow-lg" alt="Cliente 1" referrerpolicy="no-referrer">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="italic text-slate-600 font-light">"O atendimento no Branqueamento Dental | Diego Rosa Odontologia superou todas as minhas expectativas. Profissionalismo e qualidade impecáveis!"</p>
+                            <div class="font-black text-xs uppercase tracking-widest">Cliente Satisfeito</div>
+                        </div>
+                    </div>
+                
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl flex flex-col md:flex-row gap-8 items-center border border-slate-100">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfXMrqLMRgcxQ6i16Q7Swn0PXt0Gx7u8HCUPtXynzmdIjYwayRmmwxCIMSQUoBaj342ixayIu0A6nBpt4xduvhBmkB2dBeHuQMuR7D1BnBJXvaSQPTwY7KvocpJb8_Nc9pa_W48TtJcmhbWVWAJ1c8cpYlYX5M1_U5LQXvlgm9Cv3A8eXss0G5iedbeuzD1Zh7m_tE6QG0EXAbIdnI8wxA_51VIVPfX8rQvuWQNeXw0-glZ_y911RtdK6cXxYWzNdoi1pXFNwPQXduPxX_ATK6AwN9khJ3xUEsTSjapXF9Usxg&maxHeightPx=400&maxWidthPx=400&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-24 h-24 rounded-full object-cover shadow-lg" alt="Cliente 2" referrerpolicy="no-referrer">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="italic text-slate-600 font-light">"O atendimento no Branqueamento Dental | Diego Rosa Odontologia superou todas as minhas expectativas. Profissionalismo e qualidade impecáveis!"</p>
+                            <div class="font-black text-xs uppercase tracking-widest">Cliente Satisfeito</div>
+                        </div>
+                    </div>
+                
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl flex flex-col md:flex-row gap-8 items-center border border-slate-100">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWyBMTB8v5bopPn_9dEUUXf-87oTyQGDdOvE5TpH9wwRcsxG1cUtJUejBvFlOlrQjiYZuXWWB8Xwyisk1vJbtz15Hj6mKfWMpZ__iLvkJDlN5lCcU5S9N-UVAcQcvQLguDVCsqQ3oc-l5Fl4qi_zDdKnMurA9h5KThANm3bn7lLI-HRjK8vPQ-OzkwgYkL7SCkV3hwg0iVLMXkLhkvYw9Ng2QOqyTIlb_2UIgf7qV-lA2h4qKDGxLRhPpAskr4rPC35vvmP54Y1kkZg9_tWH9CmtA1F443qHSj1ZLdL28cskg&maxHeightPx=400&maxWidthPx=400&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-24 h-24 rounded-full object-cover shadow-lg" alt="Cliente 3" referrerpolicy="no-referrer">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="italic text-slate-600 font-light">"O atendimento no Branqueamento Dental | Diego Rosa Odontologia superou todas as minhas expectativas. Profissionalismo e qualidade impecáveis!"</p>
+                            <div class="font-black text-xs uppercase tracking-widest">Cliente Satisfeito</div>
+                        </div>
+                    </div>
+                
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl flex flex-col md:flex-row gap-8 items-center border border-slate-100">
+                        <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfVRGAdg8FJoq3HXJ8X4YAMipe2HqKLbaOhlsGS78Vx4HB60tNKZnRoYsMsA5pRIoXukKBedwsE6nxcOjHMd5wPtoRRDo8ZU8s_YT2u79nC0_Ib12SlZWg9Nu-TokQoWzAXuP1eOPc4QDyGrVfJhyuyss6DJbYNW7gqbiaJXmJjD3XthnKqAi_j8-oWVrs9yzWdQdx-Fa8pw-ufvsVxq7raADq8NnLsWZbl1srgFgafAQP8_VTxZIBa9oEuYiva40OmKBX0QplAzsHn4haKPSSnUb2CDvG2mEBFjiODkOlRm4w&maxHeightPx=400&maxWidthPx=400&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-24 h-24 rounded-full object-cover shadow-lg" alt="Cliente 4" referrerpolicy="no-referrer">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="italic text-slate-600 font-light">"O atendimento no Branqueamento Dental | Diego Rosa Odontologia superou todas as minhas expectativas. Profissionalismo e qualidade impecáveis!"</p>
+                            <div class="font-black text-xs uppercase tracking-widest">Cliente Satisfeito</div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact -->
+    <section id="contato" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] opacity-50">Localização</span>
+                    <h2 class="serif text-5xl font-black tracking-tighter">Venha nos <span class="italic font-normal opacity-60">Visitar.</span></h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-primary/10 text-primary rounded-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-black uppercase tracking-widest opacity-50 mb-1">Endereço</div>
+                            <div class="font-bold">Rua Barão de Jaguara, 707 - sala 53 - Amadeus, Campinas - SP, 13015-001, Brazil</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-primary/10 text-primary rounded-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-black uppercase tracking-widest opacity-50 mb-1">Telefone</div>
+                            <div class="font-bold">5519998849875</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5519998849875" target="_blank" class="inline-block px-10 py-5 btn-primary rounded-full font-black text-xs uppercase tracking-widest shadow-xl">
+                    Agendar Horário
+                </a>
+            </div>
+            
+            <div class="h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-100">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    style="border:0" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk&q=place_id:ChIJbTdTiEjPyJQRXrHkzpPKn0c" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 text-center border-t border-current/5 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-5">
+            <img src="/api/photo?name=places%2FChIJbTdTiEjPyJQRXrHkzpPKn0c%2Fphotos%2FATCDNfWT8TcNNJVyBr7POdzKjtgan-CFN7cETHB_9MevAy5StuFdnAQFu0XGsBVbUjb0RvUvJU5mDS4MS9FPvCfa95PfxLHvfeY6d1UzWrMApFYyRQZ7St0sXGmNTIlOM5MdfFmDap6trahhg8nkKgOthKmil2VxdyzUWXT1U6brrt3slkVm2CpcbQv8rLr9d67IzQ3-K32VZ1V3sOIM7IviOcyxc4xuT6SXbVf-PAN2TXLhFVmyD2WfiB6GmwNkWL_zXPxoU8pWkPGBmbKk60U2abMU4Lg27YpHltC1WXrU9jC4Nw&maxHeightPx=800&maxWidthPx=1200&key=AIzaSyCEQNsGPCJAQ9PO38lzE3VYIvzFN70X7Sk" class="w-full h-full object-cover" alt="Footer Background" referrerpolicy="no-referrer">
+        </div>
+        <div class="relative z-10">
+            <div class="serif text-2xl font-black tracking-tighter mb-4">Branqueamento Dental | Diego Rosa Odontologia</div>
+            
+            
+
+            <div class="text-[10px] font-black uppercase tracking-widest opacity-50">
+                © 2024 Branqueamento Dental | Diego Rosa Odontologia. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5519998849875" target="_blank" class="fixed bottom-8 right-8 z-[200] bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+</body>
+</html>
+    
